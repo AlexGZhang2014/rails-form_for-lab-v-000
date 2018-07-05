@@ -140,3 +140,10 @@ SyntaxError (/home/AlexGZhang2014/rails-form_for-lab-v-000/app/views/school_clas
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.3ms)
+
+
+Started GET "/school_classes" for 65.191.0.83 at 2018-07-05 20:50:49 +0000
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.3ms)
