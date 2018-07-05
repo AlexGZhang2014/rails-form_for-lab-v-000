@@ -544,3 +544,11 @@ Unpermitted parameter: room_number
   [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.188.72:49262/school_classes/3
 Completed 302 Found in 10ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/school_classes/3" for 65.191.0.83 at 2018-07-05 21:02:31 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.2ms)
