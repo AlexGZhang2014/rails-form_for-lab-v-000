@@ -12,8 +12,11 @@ class SchoolClassesController < ApplicationController
   end
   
   def show
-    @student = Student.find(params[:id])
+    @school_class = Student.find(params[:id])
   end
+  
+  def edit
+    @
   
   private
   
