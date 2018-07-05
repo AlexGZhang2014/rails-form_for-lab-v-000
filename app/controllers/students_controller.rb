@@ -11,6 +11,10 @@ class StudentsController < ApplicationController
     redirect_to school_class_path(@school_class)
   end
   
+  def show
+    @school_class = SchoolClass.find(params[:id])
+  end
+  
   private
   
   def post_params(*args)
