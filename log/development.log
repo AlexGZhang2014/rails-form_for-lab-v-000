@@ -488,3 +488,18 @@ Processing by StudentsController#update as HTML
   [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.188.72:49262/students/3
 Completed 302 Found in 78ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/students/3" for 65.191.0.83 at 2018-07-05 21:00:37 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered students/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students" for 65.191.0.83 at 2018-07-05 21:00:40 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
