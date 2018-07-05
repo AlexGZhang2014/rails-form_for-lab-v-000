@@ -7,9 +7,8 @@ class SchoolClassesController < ApplicationController
   end
   
   def create
-    @post = Post.new(post_params(:title, :description))
-    @post.save
-    redirect_to post_path(@post)
+    @school_class = SchoolClass.create(post_params(:title, :description))
+    redirect_to school_class_path(@school_class)
   end
   
   
