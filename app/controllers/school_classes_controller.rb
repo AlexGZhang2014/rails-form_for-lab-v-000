@@ -9,4 +9,8 @@ class SchoolClassesController < ApplicationController
   def create
     
   end
+  
+  def post_params(*args)
+    params.require(:post).permit(*args)
+  end
 end
