@@ -209,3 +209,13 @@ ActionController::ParameterMissing (param is missing or the value is empty: post
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+
+
+Started POST "/students" for 65.191.0.83 at 2018-07-05 20:54:35 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AwNmbblmVVRTix6/8Ey6XxniuZQ2PxbmfC0JPzIfH8ZvfFpdPvFbLSnbT+vy2xcFqpaQXuV8lFo7NFict3lY2w==", "student"=>{"first_name"=>"Harlem", "last_name"=>"Shake"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Harlem"], ["last_name", "Shake"], ["created_at", "2018-07-05 20:54:35.572840"], ["updated_at", "2018-07-05 20:54:35.572840"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://67.205.188.72:49262/students/3
+Completed 302 Found in 30ms (ActiveRecord: 5.3ms)
